@@ -1,0 +1,75 @@
+for offline setup all dependencies should be downloaded in local.m2
+
+mvn clean install
+mvn dependencies:go-offline
+.m2 Folder Kya Hota Hai?
+
+.m2 = Maven ka godown / store room
+
+Location:
+
+C:\Users\YourUser\.m2\repository
+
+Iske andar hota hai:
+
+Spring Boot parent
+
+Dependencies (jar files)
+
+Plugins
+
+Jab tum mvn clean install chalati ho:
+
+Maven internet se dependencies download karke .m2 me store karta hai.
+
+
+2️⃣ JAR File Kya Hoti Hai?
+
+JAR = Final packed application.
+
+Jab tum run karti ho:
+
+mvn clean package
+
+To target folder me ek file banti hai:
+
+quiz-app-0.0.1-SNAPSHOT.jar
+
+Ye Spring Boot ka fat jar hota hai.
+
+Iske andar:
+
+Tumhara code
+
+Dependencies
+
+Embedded Tomcat
+
+
+mvn clean package
+java -jar target/demo-0.0.1-SNAPSHOT.jar
+
+
+
+when maven is installed 
+now run these command 
+mvn -version
+mvn clean install 
+mvn spring-boot:run
+
+now test backened in browser 
+http://localhost:8080/question/all
+
+now backened is running 
+
+
+
+
+
+
+final ..........................................
+
+cd project-folder-name 
+cd target
+java -jar target/demo-0.0.1-SNAPSHOT.jar
+http://localhost:8080
